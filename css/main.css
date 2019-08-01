@@ -2,25 +2,32 @@ body{
     width:80%;
     margin:auto;
 }
+
 #pname{
-    text-align: centre;
+    text-align: center
 }
+
 hr{
     height: 2px;
     background-color:green;
+    
 }
 h3{
-    width: 100%;
-    background-color: grey;
+    background-color: gray;
+    width:100%;
 }
 table{
-    widows: 100%;
-
+    width:100%;
+}
+table,th,td{
+    border-bottom: 1px solid gray<
 }
 table th{
-    background-color: green;
+    background-color: rgb(13, 43, 21);
     color: white;
+
+
 }
-table th,td{
-    border:1px solid grey;
+table td{
+    border:1px solid green
 }
