@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>EMI Calcutator</title>
-    <link rel="stylesheets" href="css/main.css">
+    <link rel="stylesheets" href="main.css">
     <script type="text/javascript">
     function showResult(){
         P=parseFloat(document.getElementById("amount").value)
         R=parseFloat(document.getElementById("roi").value)
         N=parseFloat(document.getElementById("duration").value)
-        alert(P+" "+R+" "+N)
-        R=R/1200
-        EMI=P*R/(1-(Math.pow(1/(1+R),N)))
+        
+        RI=R/1200
+        EMI=P*RI/(1-(Math.pow(1/(1+RI),N)))
         res="Amount:"+P+"<br>ROI:"+R+"<br>Duration:"+N+"<br>EMI:"+EMI
         document.getElementById("res").innerHTML=res;
     }
